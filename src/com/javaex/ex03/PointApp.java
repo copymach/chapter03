@@ -2,10 +2,11 @@ package com.javaex.ex03;
 
 public class PointApp {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+	public static void main(String[] args) {			
 //		equals를 파보자
+		
+		
+		/* 내코드
 		Point a = new Point(2,3);
 		Point b = new Point(2,3);
 		Point c = new Point(50,870);
@@ -20,6 +21,23 @@ public class PointApp {
 		
 		System.out.println("------------------------");
 		System.out.println(a.equals(b));
+		System.out.println(b.equals(c));
+		*/
+		
+		
+//		일영샘의 코드
+		Point a = new Point(2,3);
+		Point b = new Point(2,3);
+		Point c = new Point(100, 139);
+		
+		Point d = c;
+		
+		System.out.println(a==b);
+		System.out.println(d==c);
+
+		System.out.println("=======================");
+		System.out.println(a.equals(b));
+		System.out.println(b.equals(c));
 		
 		
 	}
